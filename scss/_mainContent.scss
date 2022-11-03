@@ -1,0 +1,325 @@
+.mainContent {
+    overflow: hidden;
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 35rem;
+    background-color: $lightGray-Color;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    .choosed {
+        background-color: $theme-Color;
+        color: $lightGray-Color;
+        border-radius: 35px;
+
+
+    }
+
+    &__categories {
+        margin-top: 1rem;
+        display: flex;
+        padding-left: 1rem;
+        margin-bottom: 2rem;
+
+        h4 {
+            font-weight: 400;
+            font-size: 15px;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+            padding-left: 0.4rem;
+            padding-right: 0.4rem;
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+    }
+
+    &__bestSellers {
+
+        width: 100%;
+        height: 25rem;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-evenly;
+
+
+        &__bestSeller {
+            background-color: white;
+            width: 45%;
+            display: flex;
+            border-radius: 15px;
+
+            &__text {
+
+                width: 40%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 1rem;
+
+                h2 {
+                    font-weight: 800;
+                    font-size: 30px;
+                }
+
+                div {
+                    display: flex;
+
+                    align-items: center;
+
+                    h4 {
+                        width: auto;
+                        margin-top: 0.4rem;
+                        margin-left: 0.4rem;
+                        color: $theme-Color;
+                        margin-right: 0.4rem;
+                    }
+
+                    img {
+                        margin-top: 3%;
+                        width: 13%;
+                        @include animation1;
+
+                        &:hover {
+                            transform: translateX(10%);
+
+                        }
+
+
+                    }
+                }
+
+
+            }
+
+            &__logo {
+                width: 60%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                img {
+                    width: 90%;
+                    height: 90%;
+                }
+            }
+
+
+        }
+
+
+
+    }
+
+    @media all and (max-width: 1080px) {
+        .mainContent__bestSellers {
+
+            &__bestSeller {
+                width: 100%;
+                height: 100%;
+
+
+                &__logo {
+
+                    img {
+                        width: 90%;
+                        height: 90%;
+                        border-radius: 5px;
+                    }
+                }
+
+            }
+
+
+        }
+
+        .hidden {
+            width: 0px;
+            height: 0px;
+        }
+
+    }
+
+
+
+    @media all and (max-width: 500px) {
+        .mainContent__bestSellers {
+
+            &__bestSeller {
+
+                &__text {
+
+                    width: 30%;
+
+                    h2 {
+                        font-size: 25px;
+                        width: 90%;
+                    }
+
+                    div {
+                        display: flex;
+                        font-size: 10px;
+
+                        img {
+
+                            margin-top: 10%;
+                            width: 15%;
+
+                            &:hover {
+                                transform: translateX(30%);
+
+                            }
+                        }
+                    }
+                }
+
+                &__logo {
+
+                    width: 70%;
+                    margin-left: 1rem;
+
+                    img {
+                        width: 90%;
+                        height: 90%;
+                    }
+                }
+
+            }
+
+
+        }
+
+        .hidden {
+            width: 0px;
+            height: 0px;
+        }
+
+    }
+
+    @media all and (max-width : 420px) {
+        .mainContent__bestSellers {
+
+            &__bestSeller {
+
+                &__text {
+
+                    width: 40%;
+
+                    h2 {
+                        font-size: 25px;
+                        width: 90%;
+                    }
+
+                    div {
+                        display: flex;
+                        font-size: 15px;
+
+                        img {
+
+                            margin-top: 10%;
+                            width: 15%;
+
+                            &:hover {
+                                transform: translateX(30%);
+
+                            }
+                        }
+                    }
+                }
+
+                &__logo {
+
+                    width: 60%;
+                    margin-left: 1rem;
+
+                    img {
+                        width: 90%;
+                        height: 80%;
+                    }
+                }
+
+            }
+
+
+        }
+
+        .hidden {
+            width: 0px;
+            height: 0px;
+        }
+
+        &__categories {
+            padding-left: 0;
+
+            h4 {
+                font-size: 14px;
+            }
+        }
+    }
+
+    @media all and (max-width : 385px) {
+
+        .mainContent__bestSellers {
+
+            &__bestSeller {
+
+                &__text {
+
+                    width: 25%;
+
+                    h2 {
+                        font-size: 15px;
+                        width: 90%;
+                    }
+
+                    div {
+                        display: flex;
+                        font-size: 8px;
+
+                        img {
+
+                            margin-top: 10%;
+                            width: 30%;
+
+                            &:hover {
+                                transform: translateX(30%);
+
+                            }
+                        }
+                    }
+                }
+
+                &__logo {
+
+                    width: 75%;
+                    margin-left: 1rem;
+
+                    img {
+                        width: 90%;
+                        height: 80%;
+                    }
+                }
+
+            }
+
+
+        }
+
+        .hidden {
+            width: 0px;
+            height: 0px;
+        }
+
+        &__categories {
+            padding-left: 0;
+
+            h4 {
+                font-size: 12px;
+            }
+        }
+    }
+
+}
