@@ -30,7 +30,7 @@ function CartList({ id, qty, uID }) {
         axios({
             method: "POST",
             data: { uID, id },
-            withCredentials: true,
+            withCredentials: false,
             url: "https://ecom88.herokuapp.com/deleteProduct"
         })
             .then(res => {
