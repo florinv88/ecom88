@@ -31,7 +31,7 @@ function CartList({ id, qty, uID }) {
             method: "POST",
             data: { uID, id },
             withCredentials: true,
-            url: "http://localhost:3001/deleteProduct"
+            url: "https://ecom88.herokuapp.com/deleteProduct"
         })
             .then(res => {
                 if (res.data === false) {
