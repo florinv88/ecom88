@@ -25,6 +25,7 @@ function Cart() {
 
 
     const handleCheckout = () => {
+        console.log("Before axios call")
         axios({
             method: "POST",
             withCredentials: false,
@@ -34,7 +35,8 @@ function Cart() {
             url: "https://ecom88.herokuapp.com/checkout"
         })
             .then(res => {
-                window.location.assign(res.data.url)
+                // window.location.assign(res.data.url)
+                console.log(res.data.url)
             })
     }
 
