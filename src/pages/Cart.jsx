@@ -27,7 +27,7 @@ function Cart() {
     const handleCheckout = () => {
         axios({
             method: "POST",
-            withCredentials: true,
+            withCredentials: false,
             data: {
                 cartItems: user.cart
             },

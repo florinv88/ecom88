@@ -16,7 +16,7 @@ const ContextProvider = (props) => {
                     product_id: id
                 },
                 url: "https://ecom88.herokuapp.com/getProduct",
-                withCredentials: true
+                withCredentials: false
             })
                 .then(res => setProduct(res.data))
                 .catch(err => console.log(err))

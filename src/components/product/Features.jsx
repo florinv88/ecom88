@@ -19,7 +19,7 @@ function Features() {
                 userID: user._id,
                 productID: id
             },
-            withCredentials: true,
+            withCredentials: false,
             url: "https://ecom88.herokuapp.com/addProductToCart"
         })
             .then(res => {

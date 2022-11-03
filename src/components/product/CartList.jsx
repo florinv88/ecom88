@@ -18,7 +18,8 @@ function CartList({ id, qty, uID }) {
             data: {
                 product_id: id
             },
-            url: "https://ecom88.herokuapp.com/getProduct"
+            url: "https://ecom88.herokuapp.com/getProduct",
+            withCredentials: false
         })
             .then(res => setProduct(res.data))
 
