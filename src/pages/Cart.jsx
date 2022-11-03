@@ -25,19 +25,20 @@ function Cart() {
 
 
     const handleCheckout = () => {
-        console.log("Before axios call")
-        axios({
-            method: "POST",
-            withCredentials: false,
-            data: {
-                cartItems: user.cart
-            },
-            url: "https://ecom88.herokuapp.com/checkout"
-        })
-            .then(res => {
-                // window.location.assign(res.data.url)
-                console.log(res.data.url)
-            })
+        alert("The chekout will be available soon..!")
+        /* axios({
+             method: "POST",
+             withCredentials: false,
+             data: {
+                 cartItems: user.cart
+             },
+             url: "https://ecom88.herokuapp.com/checkout"
+         })
+             .then(res => {
+                 // window.location.assign(res.data.url)
+                 console.log(res.data.url)
+             })
+             */
     }
 
     return (
