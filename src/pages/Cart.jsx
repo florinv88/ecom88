@@ -25,8 +25,8 @@ function Cart() {
 
 
     const handleCheckout = () => {
-        // alert("The chekout will be available soon..!")
-        axios({
+        alert("The chekout will be available soon..!")
+        /*axios({
             method: "POST",
             withCredentials: false,
             data: {
@@ -38,7 +38,7 @@ function Cart() {
                 // window.location.assign(res.data.url)
                 console.log(res.data.url)
             })
-
+*/
     }
 
     return (
