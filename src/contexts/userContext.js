@@ -14,7 +14,7 @@ const UserContextProvider = (props) => {
             axios({
                 method: "POST",
                 data: { userID: Cookies.get("userID") },
-                withCredentials: false,
+                withCredentials: true,
                 url: "https://ecom88.herokuapp.com/getCurrentUser"
 
             })

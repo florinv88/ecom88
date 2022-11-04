@@ -18,7 +18,7 @@ function Overview() {
                 userID: user._id,
                 productID: id
             },
-            withCredentials: false,
+            withCredentials: true,
             url: "https://ecom88.herokuapp.com/addProductToCart"
         })
             .then(res => {

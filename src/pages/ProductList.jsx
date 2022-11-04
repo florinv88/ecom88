@@ -44,7 +44,7 @@ function ProductList() {
                 data: {
                     category_product: category
                 },
-                withCredentials: false,
+                withCredentials: true,
                 url: "https://ecom88.herokuapp.com/getProductsByCategory"
 
             })

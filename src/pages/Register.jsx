@@ -18,7 +18,7 @@ function Register() {
             axios({
                 method: "POST",
                 data: { username, password },
-                withCredentials: false,
+                withCredentials: true,
                 url: "https://ecom88.herokuapp.com/registerUser"
             })
                 .then(res => {

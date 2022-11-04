@@ -20,7 +20,7 @@ const MainContent = () => {
 
         axios({
             method: "GET",
-            withCredentials: false,
+            withCredentials: true,
             url: "https://ecom88.herokuapp.com/getAllProducts"
         })
             .then(res => setProducts(res.data))
